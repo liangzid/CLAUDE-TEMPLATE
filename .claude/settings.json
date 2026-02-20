@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(npm:*)",
+      "Bash(ls:*)",
+      "Read(src/**)",
+      "Write(*)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(docker run:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(sudo:*)",
+      "Read(.env)"
+    ],
+    "defaultMode": "acceptEdits"
+  }
+}
